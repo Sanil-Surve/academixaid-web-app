@@ -7,9 +7,10 @@ const Home = () => {
   const [savedQuestions, setSavedQuestions] = useState([]);
   const [error, setError] = useState("");
 
+
   const fetchAnswer = async (question) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/questions`, {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/questions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
