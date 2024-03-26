@@ -7,7 +7,6 @@ const Home = () => {
   const [savedQuestions, setSavedQuestions] = useState([]);
   const [error, setError] = useState("");
 
-
   const fetchAnswer = async (question) => {
     try {
       const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/questions`, {
