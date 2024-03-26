@@ -10,6 +10,10 @@ const app = express();
 const userRouter = require("./routes/user");
 const questionRoutes = require("./routes/questionRoutes");
 
+app.get('/hello', (req, res) => {
+  res.send('Hello World!')
+})
+
 app.use(express.json());
 app.use(bodyparser.json());
 app.use(cors());
@@ -17,6 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(userRouter);
 app.use("/api/questions", questionRoutes);
+
 
 app.listen(PORT_URI, () => {
   console.log(`Server listening on port:${PORT_URI}`);
