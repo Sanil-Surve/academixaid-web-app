@@ -1,0 +1,66 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-bar {
+  display: flex;
+  display: inline;
+  align-items: center;
+  margin-top: 50px;
+  max-width: 600px; /* Set your desired maximum width */
+  width: 100%;
+}
+
+.input-bar input {
+  flex: 1;
+  padding: 10px;
+  margin-top: 17px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Add margin between input and button */
+}
+
+.input-bar button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-left: 160px;
+  background-color: #007bff; /* Set your desired button background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+}
+
+.input-bar button:hover {
+  background-color: #0056b3; /* Set your desired button hover background color */
+}
+
+@media screen and (max-width: 768px) {
+  .input-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-bar input {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 88%;
+  }
+
+  .input-bar button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 150px;
+    width: auto;
+  }
+}
+
+  
+
+
+
+  

@@ -1,0 +1,116 @@
+.container__home {
+  background-color: #00224D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list {
+  background-color: rgba(240, 192, 98, 0.834);
+}
+
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+
+
+
+
+ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Set flex direction to column */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Adjust margin between list items */
+  }
+  
+  li p {
+    display: inline; /* Display paragraph inline with the button */
+    margin-right: 10px; /* Adjust margin between paragraph and button */
+    
+  }
+
+  .first {
+    font-weight: bold;
+  }
+  
+  li button {
+    padding: 5px 10px;
+    background-color: #007bff; /* Set your desired button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #0056b3; /* Set your desired button hover background color */
+  }
+
+  /* List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+/* Question */
+.question {
+  font-weight: bold;
+}
+
+/* Answer */
+.answer {
+  margin-top: 5px;
+}
+
+.loading {
+  font-style: italic;
+  color: #888;
+}
+
+.tagline {
+  text-align: center;
+  margin-top: 35px;
+  color: white;
+}
+
+.question-answer-container {
+  border: 1px solid #000; /* You can adjust the border style and color */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.error-message {
+  color: rgba(231, 20, 20, 0.88);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+  
+  

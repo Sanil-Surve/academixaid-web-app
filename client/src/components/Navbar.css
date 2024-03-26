@@ -1,0 +1,26 @@
+  .navbar {
+    background-color: hsla(20, 27%, 96%, 0.172); /* Set your desired background color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff; /* Set your desired text color */
+  }
+  
+  .navbar-brand img {
+    margin-right: 10px; /* Adjust margin as needed */
+    border-radius: 15px;
+  }
+  
+  .user-greeting {
+    color: #ffffff; /* Set your desired text color */
+    font-weight: bold; /* Adjust font weight as needed */
+  }
+  
