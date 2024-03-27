@@ -6,13 +6,13 @@ const initialState = {
   isAuthenticated: false,
 };
 
-// let url = process.env.REACT_APP_BACKEND_URL;
+console.log('%REACT_APP_BACKEND_URL');
 
 export const registerUserAsync = createAsyncThunk(
   "user/registerUserAsync",
   async ({ firstName, lastName, email, password }) => {
     try {
-      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/create-user`, {
+      const response = await axios.post(`http:localhost:8080/create-user`, {
         firstName,
         lastName,
         email,
@@ -29,7 +29,7 @@ export const loginUserAsync = createAsyncThunk(
   "user/loginUserAsync",
   async ({ email, password }) => {
     try {
-      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/sign-in`, {
+      const response = await axios.post(`http://localhost:8080/sign-in`, {
         email,
         password,
       });
