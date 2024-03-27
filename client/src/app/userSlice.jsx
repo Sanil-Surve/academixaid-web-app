@@ -6,7 +6,6 @@ const initialState = {
   isAuthenticated: false,
 };
 
-console.log('%REACT_APP_BACKEND_URL');
 
 export const registerUserAsync = createAsyncThunk(
   "user/registerUserAsync",
