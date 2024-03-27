@@ -11,7 +11,7 @@ export const registerUserAsync = createAsyncThunk(
   "user/registerUserAsync",
   async ({ firstName, lastName, email, password }) => {
     try {
-      const response = await axios.post(`http:localhost:8080/create-user`, {
+      const response = await axios.post(`http://localhost:8080/create-user`, {
         firstName,
         lastName,
         email,
