@@ -1,7 +1,8 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const questionController = require('../controllers/questionController');
+const questionController = require("../controllers/questionController");
 
-router.post('/', questionController.submitQuestion);
+router.post("/api/questions", questionController.submitQuestion);
+router.post("/api/fetch-answer", questionController.getAnswerFromDatabase);
 
 module.exports = router;
