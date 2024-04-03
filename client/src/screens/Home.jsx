@@ -2,6 +2,7 @@ import { useState } from "react";
 import InputBar from "../components/InputBar";
 import Navbar from "../components/Navbar";
 import "../styles/Home.css";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const [savedQuestions, setSavedQuestions] = useState([]);
@@ -46,6 +47,7 @@ const Home = () => {
     <>
       <div className="container__home">
         <Navbar />
+        <NavLink to="/search" className="search_route">Go to Search</NavLink>
         <h2 className="tagline">How can I help you Today!</h2>
         <InputBar onSubmit={handleSave} />
         <br />

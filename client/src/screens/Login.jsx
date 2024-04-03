@@ -56,8 +56,9 @@ const Login = () => {
           {error && <div className="error-message">{error}</div>}
           <button type="submit">Login</button>
         </form>
+        <br />
         <p>
-          Create an <Link to="/signup">Account</Link>
+          User Not Found! <Link to="/signup">Register Here</Link>
         </p>
       </div>
     </div>

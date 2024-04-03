@@ -82,8 +82,9 @@ function SignUp() {
           {error && <div className="error-message">{error}</div>}
           <button type="submit">Register</button>
         </form>
+        <br />
         <p>
-          If you already have an account, please <Link to="/login">Login</Link>
+          If you already have an account, Please <Link to="/login">Login</Link> Here
         </p>
       </div>
     </div>
