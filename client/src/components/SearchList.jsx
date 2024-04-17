@@ -15,7 +15,7 @@ const SearchList = () => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/fetch-answer",
+        "https://academixaid-app-backend-one-production.up.railway.app/api/fetch-answer",
         { question }
       );
       setAnswer(response.data.answer);
