@@ -6,6 +6,8 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const { currentUser } = useSelector(selectUser);
+  const firstName = currentUser?.user?.firstName;
+  const lastName = currentUser?.user?.lastName;
 
   return (
     <nav className="navbar bg-body-tertiary">
@@ -22,9 +24,9 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar-user">
-        {currentUser && currentUser.user && (
+        {firstName && lastName && (
           <span className="user-greeting">
-            Welcome, {currentUser.user.firstName} {currentUser.user.lastName}
+            Welcome, {firstName} {lastName}
           </span>
         )}
       </div>
