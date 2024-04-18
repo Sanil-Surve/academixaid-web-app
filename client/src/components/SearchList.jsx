@@ -70,7 +70,7 @@ const SearchList = () => {
     // Fetch suggestions based on input value
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/fetch-suggestions",
+        "https://academixaid-app-backend-one-production.up.railway.app/api/fetch-suggestions",
         { question: value }
       );
       setSuggestions(response.data.suggestions);
