@@ -79,3 +79,34 @@
     text-align: center;
     color: white;
   }
+
+
+  /* Style the datalist */
+#suggestions {
+  position: absolute;
+  z-index: 1;
+  margin-top: -1px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #fff;
+  width: inherit; /* Match the width of the input */
+}
+
+/* Style the options within the datalist */
+#suggestions option {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Style the options on hover */
+#suggestions option:hover {
+  background-color: #f2f2f2;
+}
+
+/* Style the selected option */
+#suggestions option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
