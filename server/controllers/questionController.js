@@ -5,8 +5,6 @@ const openai = new OpenAI({
   apiKey: process.env.OPEN_AI_API_KEY,
 });
 
-console.log("OpenAI API:", openai.apiKey);
-
 async function getAnswer(question) {
   const chatCompletion = await openai.chat.completions.create({
     messages: [
