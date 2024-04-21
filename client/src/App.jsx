@@ -4,6 +4,7 @@ import Login from "./screens/Login";
 import Home from "./screens/Home";
 import Landing from "./screens/Landing";
 import View from "./screens/View";
+import Chat from "./screens/Chat";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/home" element={<Home />} exact/>
         <Route path="/" element={<Landing />} exact/>
         <Route path="/search" element={<View />} exact/>
+        <Route path="/chat" element={<Chat />} exact/>
       </Routes>
     </Router>
   );

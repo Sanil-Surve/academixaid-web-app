@@ -6,17 +6,19 @@ const initialState = {
   isAuthenticated: false,
 };
 
-
 export const registerUserAsync = createAsyncThunk(
   "user/registerUserAsync",
   async ({ firstName, lastName, email, password }) => {
     try {
-      const response = await axios.post(`https://academixaid-app-backend-one-production.up.railway.app/create-user`, {
-        firstName,
-        lastName,
-        email,
-        password,
-      });
+      const response = await axios.post(
+        `https://academixaid-app-backend-one-production.up.railway.app/create-user`,
+        {
+          firstName,
+          lastName,
+          email,
+          password,
+        }
+      );
       return response.data;
     } catch (error) {
       throw error.response.data;
@@ -28,10 +30,13 @@ export const loginUserAsync = createAsyncThunk(
   "user/loginUserAsync",
   async ({ email, password }) => {
     try {
-      const response = await axios.post(`https://academixaid-app-backend-one-production.up.railway.app/sign-in`, {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        `https://academixaid-app-backend-one-production.up.railway.app/sign-in`,
+        {
+          email,
+          password,
+        }
+      );
       return response.data;
     } catch (error) {
       throw error.response.data;
@@ -67,4 +72,3 @@ const userSlice = createSlice({
 export const selectUser = (state) => state.user;
 
 export default userSlice.reducer;
-

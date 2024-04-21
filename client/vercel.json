@@ -1,0 +1,11 @@
+{
+    "routes": [
+      { "src": "/chat", "dest": "/Chat" },
+      { "src": "/signup", "dest": "/" },
+      { "src": "/login", "dest": "/" },
+      { "src": "/home", "dest": "/" },
+      { "src": "/search", "dest": "/" },
+      { "src": "/[^.]+", "dest": "/", "status": 200 }
+    ]
+  }
+  
