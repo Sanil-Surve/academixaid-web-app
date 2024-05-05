@@ -93,7 +93,7 @@ li {
   margin-top: 5px;
 }
 
-.search_route {
+/* .search_route {
   color: white;
   margin-top: 10px;
   margin-left: 5px;
@@ -104,6 +104,21 @@ li {
 .search_route:hover {
   background-color: rgba(0, 103, 105, 0.831);
   color: white;
+} */
+
+.search_route {
+  margin-top: 10px;
+  margin-left: 5px;
+  text-decoration: none;
+  background-color: rgba(7, 208, 244, 0.788);
+  color: white;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.search_route:hover {
+  background-color: rgba(0, 103, 105, 0.831);
 }
 
   

@@ -95,7 +95,7 @@ const SearchList = () => {
   return (
     <>
       <NavLink to="/home" className="home_route">Go to Home</NavLink>
-      <h2>Search a Query!</h2><br />
+      <h2>Search The Questions!</h2><br />
       <div className="search-list-container">
         <form onSubmit={handleSubmit}>
           <input

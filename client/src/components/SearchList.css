@@ -5,7 +5,6 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* width: 300px; */
     width: 95%;
   }
   
@@ -46,7 +45,7 @@
     overflow-x: auto;
     overflow-y: auto; /* Enable vertical scrolling */
     max-width: auto;
-    max-height: 300px; /* Set a maximum height for the container */
+    max-height: 500px; /* Set a maximum height for the container */
   }
   
   .answer-container h3 {
@@ -63,15 +62,16 @@
   .home_route {
     margin-top: 10px;
     margin-left: 5px;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     background-color: rgba(7, 208, 244, 0.788);
     color: white;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
   }
   
   .home_route:hover {
-    /* Define styles for hover state */
     background-color: rgba(0, 103, 105, 0.831);
-    color: white;
   }
   
 
@@ -109,4 +109,127 @@
   background-color: #007bff;
   color: #fff;
 }
+
+
+@media screen and (max-width: 668px) {
+  .search-list-container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 95%;
+  }
+
+  .input-container {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .input-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .button-container {
+    text-align: center;
+    width: 100%; /* Set width to 100% */
+    margin-left: auto; /* Center the button container */
+    margin-right: auto; /* Center the button container */
+  }
+
+  .button-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Set button width to 100% */
+  }
+
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+
+  .answer-container {
+    margin-top: 20px;
+    overflow-x: auto;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-width: auto;
+    max-height: 500px; /* Set a maximum height for the container */
+  }
+
+  .answer-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .answer-container p {
+    font-size: 16px;
+    color: white;
+  }
+
+  .home_route {
+    margin-top: 10px;
+    margin-left: 5px;
+    text-decoration: none;
+    background-color: rgba(7, 208, 244, 0.788);
+    color: white;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+
+  .home_route:hover {
+    background-color: rgba(0, 103, 105, 0.831);
+  }
+
+  h2 {
+    text-align: center;
+    color: white;
+  }
+
+  /* Style the datalist */
+  #suggestions {
+    position: absolute;
+    z-index: 1;
+    margin-top: -1px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    width: inherit; /* Match the width of the input */
+  }
+
+  /* Style the options within the datalist */
+  #suggestions option {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  /* Style the options on hover */
+  #suggestions option:hover {
+    background-color: #f2f2f2;
+  }
+
+  /* Style the selected option */
+  #suggestions option:checked {
+    background-color: #007bff;
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
