@@ -158,7 +158,7 @@
     overflow-x: auto;
     overflow-y: auto; /* Enable vertical scrolling */
     max-width: auto;
-    max-height: 500px; /* Set a maximum height for the container */
+    max-height: 300px; /* Set a maximum height for the container */
   }
 
   .answer-container h3 {
