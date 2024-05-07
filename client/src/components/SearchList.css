@@ -45,7 +45,7 @@
     overflow-x: auto;
     overflow-y: auto; /* Enable vertical scrolling */
     max-width: auto;
-    max-height: 400px; /* Set a maximum height for the container */
+    max-height: 300px; /* Set a maximum height for the container */
   }
   
   .answer-container h3 {
@@ -71,6 +71,22 @@
   }
   
   .home_route:hover {
+    background-color: rgba(0, 103, 105, 0.831);
+  }
+
+  .chat_route {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-decoration: none;
+    background-color: rgba(7, 208, 244, 0.788);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+  
+  .chat_route:hover {
     background-color: rgba(0, 103, 105, 0.831);
   }
   

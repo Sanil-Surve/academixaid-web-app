@@ -1,0 +1,136 @@
+.container {
+  width: 80%;
+  max-width: 1024px;
+  margin-top: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0960ac;
+  justify-content: center;
+}
+
+.panel {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #629feac6;
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.panel-body {
+  padding: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.chats {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chat {
+  margin-bottom: 15px;
+}
+
+.chat-avatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+}
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.chat-body {
+  overflow: hidden;
+}
+
+.chat-content {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.chat-content p {
+  margin: 0;
+}
+
+.chat-time {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.panel-footer {
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input[type="text"] {
+  width: calc(100% - 100px);
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group-btn {
+  float: right;
+}
+
+.btn {
+  margin-top: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #e96315bf;
+  color: #fff;
+  border: 1px solid #2e6da4;
+  border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+  background-color: #b244098f;
+  border-color: #ac3c10c7;
+}
+
+.btn:active,
+.btn.active {
+  background-image: none;
+}

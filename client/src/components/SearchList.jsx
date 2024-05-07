@@ -122,6 +122,7 @@ const SearchList = () => {
           </div>
         )}
       </div>
+      <NavLink to="/chat" className="chat_route">Chat Room</NavLink>
     </>
   );
 };

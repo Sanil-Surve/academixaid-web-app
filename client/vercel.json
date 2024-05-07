@@ -1,6 +1,6 @@
 {
     "routes": [
-      { "src": "/chat", "dest": "/Chat" },
+      { "src": "/chat", "dest": "/" },
       { "src": "/signup", "dest": "/" },
       { "src": "/login", "dest": "/" },
       { "src": "/home", "dest": "/" },
