@@ -81,7 +81,7 @@ button:hover {
 
 .container h2 {
   text-align: center;
-  color: #2f6fefb4;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -92,7 +92,7 @@ button:hover {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  width: 100%;
+  width: 96%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
