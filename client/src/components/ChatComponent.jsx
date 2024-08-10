@@ -4,7 +4,7 @@ import { selectUser } from "../app/userSlice";
 import io from "socket.io-client";
 import "./ChatComponent.css";
 
-const socket = io("https://academixaid-app-backend-one-production.up.railway.app");
+const socket = io("https://academixaid-app-backend-one.onrender.com");
 
 function ChatComponent() {
   const [message, setMessage] = useState("");

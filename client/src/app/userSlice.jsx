@@ -11,7 +11,7 @@ export const registerUserAsync = createAsyncThunk(
   async ({ firstName, lastName, email, password }) => {
     try {
       const response = await axios.post(
-        `https://academixaid-app-backend-one-production.up.railway.app/create-user`,
+        `https://academixaid-app-backend-one.onrender.com/create-user`,
         {
           firstName,
           lastName,
@@ -31,7 +31,7 @@ export const loginUserAsync = createAsyncThunk(
   async ({ email, password }) => {
     try {
       const response = await axios.post(
-        `https://academixaid-app-backend-one-production.up.railway.app/sign-in`,
+        `https://academixaid-app-backend-one.onrender.com/sign-in`,
         {
           email,
           password,

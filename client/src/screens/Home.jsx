@@ -10,7 +10,7 @@ const Home = () => {
 
   const fetchAnswer = async (question) => {
     try {
-      const response = await fetch(`https://academixaid-app-backend-one-production.up.railway.app/api/questions`, {
+      const response = await fetch(`https://academixaid-app-backend-one.onrender.com/api/questions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
