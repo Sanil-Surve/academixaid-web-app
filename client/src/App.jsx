@@ -23,7 +23,7 @@
 
 // export default App;
 
-import React, { Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Lazy load the components
@@ -37,7 +37,6 @@ const Chat = lazy(() => import('./screens/Chat'));
 const App = () => {
   return (
     <Router>
-      <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/signup" element={<SignUp />} exact />
           <Route path="/login" element={<Login />} exact />
@@ -46,7 +45,6 @@ const App = () => {
           <Route path="/search" element={<View />} exact />
           <Route path="/chat" element={<Chat />} exact />
         </Routes>
-      </Suspense>
     </Router>
   );
 };
