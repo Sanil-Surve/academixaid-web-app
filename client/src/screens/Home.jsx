@@ -2,11 +2,12 @@ import { useState } from "react";
 import InputBar from "../components/InputBar";
 import Navbar from "../components/Navbar";
 import "../styles/Home.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [savedQuestions, setSavedQuestions] = useState([]);
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const fetchAnswer = async (question) => {
     try {
@@ -43,10 +44,33 @@ const Home = () => {
     console.log(answer);
   };
 
+  const handleLogout = async () => {
+    try {
+      const response = await fetch(`https://academixaid-app-backend-one.onrender.com/sign-out`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${localStorage.getItem("token")}`, // Assuming the token is stored in localStorage
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to log out");
+      }
+
+      localStorage.removeItem("token"); // Clear token from storage
+      navigate("/login"); // Redirect to login page
+    } catch (error) {
+      setError(error.message);
+      console.error("Error logging out:", error.message);
+    }
+  };
+
   return (
     <>
       <div className="container__home">
         <Navbar />
+        <button onClick={handleLogout} className="logout_button">Logout</button>
         <NavLink to="/search" className="search_route">Go to Search</NavLink>
         <h2 className="tagline">How can I help you Today!</h2>
         <InputBar onSubmit={handleSave} />

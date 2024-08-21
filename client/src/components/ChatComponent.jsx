@@ -28,9 +28,7 @@ function ChatComponent() {
   };
 
   return (
-    // <div className="col-md-7 col-xs-12 col-md-offset-2">
     <div className="container">
-      {/* Panel Chat */}
       <div className="panel" id="chat">
         <div className="panel-heading">
           <h3 className="panel-title">
