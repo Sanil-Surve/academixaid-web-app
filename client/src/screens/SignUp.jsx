@@ -36,7 +36,7 @@ function SignUp() {
 
   return (
     <div className="user__container">
-      <div className="container">
+      <div className="signup__container">
         <h2>Registration Form</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">

@@ -30,7 +30,7 @@ const Login = () => {
 
   return (
     <div className="user__container">
-      <div className="container">
+      <div className="login__container">
         <h2>Login Here</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">

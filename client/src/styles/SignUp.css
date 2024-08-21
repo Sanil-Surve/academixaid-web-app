@@ -69,20 +69,20 @@ button:hover {
   object-fit: cover;
 }
 
-.container {
+.signup__container {
   width: 90%;
   margin-top: 30px;
   max-width: 400px;
   margin: 100px auto;
-  background-color: #fff;
+  background-color: #5de50ecb;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container h2 {
+.signup__container h2 {
   text-align: center;
-  color: #ffffff;
+  color: #1311119b;
   margin-bottom: 10px;
 }
 

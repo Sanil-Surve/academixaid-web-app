@@ -18,8 +18,6 @@ import userReducer from "./userSlice";
 const persistConfig = {
   key: "root",
   storage,
-  serialize: true, // Ensure serializability
-  deserialize: true, // Ensure serializability
 };
 
 const persistedReducer = persistReducer(persistConfig, userReducer);
