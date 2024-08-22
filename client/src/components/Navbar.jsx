@@ -1,5 +1,5 @@
 import React from "react";
-import mainlogo from "../assets/academixAid.jpg";
+import mainlogo from "../assets/software-developer.jpg";
 import { useSelector } from "react-redux";
 import { selectUser } from "../app/userSlice";
 import "./Navbar.css";

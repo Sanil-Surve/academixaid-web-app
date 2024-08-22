@@ -80,7 +80,7 @@ function SignUp() {
             />
           </div>
           {error && <div className="error-message">{error}</div>}
-          <button type="submit">Register</button>
+          <button type="submit" className="register-btn">Register</button>
         </form>
         <br />
         <p>
