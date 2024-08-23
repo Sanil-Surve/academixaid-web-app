@@ -59,7 +59,7 @@ const Home = () => {
       }
 
       localStorage.removeItem("token"); // Clear token from storage
-      navigate("/login"); // Redirect to login page
+      navigate("/"); // Redirect to landing page
     } catch (error) {
       setError(error.message);
       console.error("Error logging out:", error.message);
