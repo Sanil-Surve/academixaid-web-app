@@ -29,7 +29,7 @@ ul {
   li p {
     display: inline; /* Display paragraph inline with the button */
     margin-right: 10px; /* Adjust margin between paragraph and button */
-    /* color: white; */
+    color: black;
     
   }
 
@@ -73,7 +73,7 @@ li {
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: 15px;
-  color: white;
+  -webkit-text-fill-color: black;
 }
 
 .loading {
