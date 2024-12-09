@@ -82,7 +82,7 @@ const Home = () => {
                 <li key={index}>
                   <div className="question-answer-container">
                     <p className="question">{item.question}</p>:<br />
-                    <p className="answer">{item.answer || "Loading..."}</p>
+                    <pre className="answer">{item.answer || "Loading..."}</pre>
                     {error && <div className="error-message">{error}</div>}
                   </div>
                 </li>
