@@ -73,7 +73,7 @@ li {
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: 15px;
-  -webkit-text-fill-color: black;
+  color: black;
 }
 
 .loading {
