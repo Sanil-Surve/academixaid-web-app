@@ -62,7 +62,7 @@ const SearchList = () => {
         {answer && (
           <div className="answer-container">
             <h3>Answer:</h3>
-            <p>{answer}</p>
+            <pre>{answer}</pre>
           </div>
         )}
       </div>
