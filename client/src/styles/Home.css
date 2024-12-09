@@ -29,7 +29,7 @@ ul {
   li p {
     display: inline; /* Display paragraph inline with the button */
     margin-right: 10px; /* Adjust margin between paragraph and button */
-    color: white;
+    /* color: white; */
     
   }
 
@@ -78,7 +78,7 @@ li {
 
 .loading {
   font-style: italic;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .tagline {
@@ -90,7 +90,7 @@ li {
 .question-answer-container {
   border: 1px solid #ffffff; /* You can adjust the border style and color */
   padding: 10px; /* Adjust padding as needed */
-  background-color: rgba(255, 255, 255, 0.815);
+  background-color: white;
   
 }
 
