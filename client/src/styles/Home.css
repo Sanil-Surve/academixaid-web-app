@@ -69,6 +69,10 @@ li {
 /* Answer */
 .answer {
   margin-top: 5px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 15px;
 }
 
 .loading {
