@@ -4,7 +4,7 @@ import { selectUser } from "../app/userSlice";
 import io from "socket.io-client";
 import "./ChatComponent.css";
 
-const socket = io("http://localhost:4000");
+const socket = io("http://31.97.202.251:4000");
 
 function ChatComponent() {
   const [message, setMessage] = useState("");

@@ -11,7 +11,7 @@ const Home = () => {
 
   const fetchAnswer = async (question) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/questions`, {
+      const response = await fetch(`http://31.97.202.251:4000/api/questions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -46,16 +46,13 @@ const Home = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch(
-        `https://academixaid-app-backend-one.onrender.com/sign-out`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${localStorage.getItem("token")}`, // Assuming the token is stored in localStorage
-          },
-        }
-      );
+      const response = await fetch(`http://31.97.202.251:4000/sign-out`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`, // Assuming the token is stored in localStorage
+        },
+      });
 
       if (!response.ok) {
         throw new Error("Failed to log out");

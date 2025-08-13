@@ -1,5 +1,3 @@
-
-import React from "react";
 import "../styles/Landing.css";
 import mainlogo from "../assets/software-developer.jpg";
 import { NavLink } from "react-router-dom";
@@ -38,4 +36,3 @@ function Landing() {
 }
 
 export default Landing;
-
