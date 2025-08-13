@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import "./SearchList.css";
 import { NavLink } from "react-router-dom";
@@ -14,7 +14,7 @@ const SearchList = () => {
     // Fetch suggestions based on input value
     try {
       const response = await axios.post(
-        "https://academixaid-app-backend-one.onrender.com/api/fetch-suggestions",
+        "http://localhost:4000/api/fetch-suggestions",
         { question: value }
       );
       setSuggestions(response.data.suggestions);
@@ -27,7 +27,7 @@ const SearchList = () => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "https://academixaid-app-backend-one.onrender.com/api/fetch-answer",
+        "http://localhost:4000/api/fetch-answer",
         { question }
       );
       setAnswer(response.data.answer);
@@ -38,8 +38,11 @@ const SearchList = () => {
 
   return (
     <>
-      <NavLink to="/home" className="home_route">Go to Home</NavLink>
-      <h2>Search Your Answers!</h2><br />
+      <NavLink to="/home" className="home_route">
+        Go to Home
+      </NavLink>
+      <h2>Search Your Answers!</h2>
+      <br />
       <div className="search-list-container">
         <form onSubmit={handleSubmit}>
           <input
@@ -66,11 +69,11 @@ const SearchList = () => {
           </div>
         )}
       </div>
-      <NavLink to="/chat" className="chat_route">Chat Room</NavLink>
+      <NavLink to="/chat" className="chat_route">
+        Chat Room
+      </NavLink>
     </>
   );
 };
 
 export default SearchList;
-
-

@@ -11,7 +11,7 @@ const Home = () => {
 
   const fetchAnswer = async (question) => {
     try {
-      const response = await fetch(`https://academixaid-app-backend-one.onrender.com/api/questions`, {
+      const response = await fetch(`http://localhost:4000/api/questions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -46,13 +46,16 @@ const Home = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch(`https://academixaid-app-backend-one.onrender.com/sign-out`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${localStorage.getItem("token")}`, // Assuming the token is stored in localStorage
-        },
-      });
+      const response = await fetch(
+        `https://academixaid-app-backend-one.onrender.com/sign-out`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${localStorage.getItem("token")}`, // Assuming the token is stored in localStorage
+          },
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to log out");
@@ -70,8 +73,12 @@ const Home = () => {
     <>
       <div className="container__home">
         <Navbar />
-        <button onClick={handleLogout} className="logout_button">Logout</button>
-        <NavLink to="/search" className="search_route">Go to Search</NavLink>
+        <button onClick={handleLogout} className="logout_button">
+          Logout
+        </button>
+        <NavLink to="/search" className="search_route">
+          Go to Search
+        </NavLink>
         <h2 className="tagline">How can I help you Today!</h2>
         <InputBar onSubmit={handleSave} />
         <br />

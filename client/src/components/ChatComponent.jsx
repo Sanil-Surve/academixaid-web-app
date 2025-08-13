@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { selectUser } from "../app/userSlice";
 import io from "socket.io-client";
 import "./ChatComponent.css";
 
-const socket = io("https://academixaid-app-backend-one.onrender.com");
+const socket = io("http://localhost:4000");
 
 function ChatComponent() {
   const [message, setMessage] = useState("");

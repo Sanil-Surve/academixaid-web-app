@@ -1,5 +1,4 @@
-
-import React, { useState } from "react";
+import { useState } from "react";
 import "./InputBar.css";
 
 const InputBar = ({ onSubmit }) => {
@@ -26,4 +25,3 @@ const InputBar = ({ onSubmit }) => {
 };
 
 export default InputBar;
-
