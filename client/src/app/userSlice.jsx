@@ -12,7 +12,7 @@ export const registerUserAsync = createAsyncThunk(
     try {
       const response = await axios.post(
         // `https://academixaid-app-backend-one.onrender.com/create-user`,
-        `http://31.97.202.251:4000/create-user`,
+        `https://academixaid.online/create-user`,
         {
           firstName,
           lastName,
@@ -33,7 +33,7 @@ export const loginUserAsync = createAsyncThunk(
     try {
       const response = await axios.post(
         // `https://academixaid-app-backend-one.onrender.com/sign-in`,
-        `http://31.97.202.251:4000/sign-in`,
+        `https://academixaid.online/sign-in`,
         {
           email,
           password,

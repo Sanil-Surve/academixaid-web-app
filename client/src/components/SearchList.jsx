@@ -14,7 +14,7 @@ const SearchList = () => {
     // Fetch suggestions based on input value
     try {
       const response = await axios.post(
-        "http://31.97.202.251:4000/api/fetch-suggestions",
+        "https://academixaid.online/api/fetch-suggestions",
         { question: value }
       );
       setSuggestions(response.data.suggestions);
@@ -27,7 +27,7 @@ const SearchList = () => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://31.97.202.251:4000/api/fetch-answer",
+        "https://academixaid.online/api/fetch-answer",
         { question }
       );
       setAnswer(response.data.answer);

@@ -11,7 +11,7 @@ const Home = () => {
 
   const fetchAnswer = async (question) => {
     try {
-      const response = await fetch(`http://31.97.202.251:4000/api/questions`, {
+      const response = await fetch(`https://academixaid.online/api/questions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const Home = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch(`http://31.97.202.251:4000/sign-out`, {
+      const response = await fetch(`https://academixaid.online/sign-out`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
