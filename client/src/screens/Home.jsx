@@ -11,7 +11,8 @@ const Home = () => {
 
   const fetchAnswer = async (question) => {
     try {
-      const response = await fetch(`https://academixaid.online/api/questions`, {
+      // const response = await fetch(`https://academixaid.online/api/questions`, {
+      const response = await fetch(`http://localhost:4000/api/questions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

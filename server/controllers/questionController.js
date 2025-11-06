@@ -1,47 +1,25 @@
-const axios = require("axios");
+require("dotenv").config();
+const Groq = require("groq-sdk");
 const Question = require("../models/Question");
 
-async function getAnswer(question, model = "llama3.2:latest") {
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+
+async function getAnswer(question, model = "openai/gpt-oss-20b") {
   try {
-    const response = await axios.post(
-      "http://localhost:11434/api/generate",
-      {
-        model,
-        prompt: `Give Answer of this question: ${question}`,
-        stream: true,
-      },
-      {
-        responseType: "stream",
-      }
-    );
-
-    return await new Promise((resolve, reject) => {
-      let answer = "";
-      response.data.on("data", (chunk) => {
-        const lines = chunk.toString().split("\n");
-        for (const line of lines) {
-          if (line.trim() === "") continue;
-          try {
-            const parsed = JSON.parse(line);
-            if (parsed.response) {
-              answer += parsed.response;
-            }
-          } catch (err) {
-            // ignore JSON parse errors for incomplete lines
-          }
-        }
-      });
-
-      response.data.on("end", () => {
-        resolve(answer);
-      });
-
-      response.data.on("error", (err) => {
-        reject(err);
-      });
+    const chatCompletion = await groq.chat.completions.create({
+      model: model,
+      messages: [
+        { role: "user", content: `Give Answer of this question: ${question}` },
+      ],
+      temperature: 1,
+      max_completion_tokens: 8192,
+      top_p: 1,
+      reasoning_effort: "medium",
     });
+    const answer = chatCompletion.choices[0]?.message?.content || "";
+    return answer;
   } catch (error) {
-    console.error("Error fetching answer from Ollama:", error.message);
+    console.error("Error fetching answer from Groq:", error.message);
     throw error;
   }
 }
